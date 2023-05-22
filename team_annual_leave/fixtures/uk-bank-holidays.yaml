@@ -1,0 +1,46 @@
+# This is a list of bank holidays - it's not a standard fixture file, but instead expected to be run through
+# a task [TBC] to synchronize holidays
+
+# 2020
+2020-01-01 - Public Holiday - New Year’s Day
+2020-04-10 - Public Holiday - Good Friday
+2020-04-13 - Public Holiday - Easter Monday
+2020-05-08 - Public Holiday - Early May Bank Holiday (VE day)
+2020-05-25 - Public Holiday - Spring Bank Holiday
+2020-08-31 - Public Holiday - Summer Bank Holiday
+2020-12-25 - Public Holiday - Christmas Day
+2020-12-28 - Public Holiday - Boxing Day Substitute
+2020-12-29 - 2020-12-31 - Office Closed - Office Closed
+
+# 2021
+2021-01-01 - Public Holiday - New Year’s Day
+2021-04-02 - Public Holiday - Good Friday
+2021-04-05 - Public Holiday - Easter Monday
+2021-05-03 - Public Holiday - Early May Bank Holiday
+2021-05-31 - Public Holiday - Spring Bank Holiday
+2021-08-30 - Public Holiday - Summer Bank Holiday
+2021-12-27 - Public Holiday - Christmas Day Substitute
+2021-12-28 - Public Holiday - Boxing Day Substitute
+2021-12-29 - 2021-12-31 - Office Closed - Office Closed
+
+# 2022
+2022-01-03 - Public Holiday - New Year’s Day
+2022-04-15 - Public Holiday - Good Friday
+2022-04-18 - Public Holiday - Easter Monday
+2022-05-02 - Public Holiday - Early May Bank Holiday
+2022-06-02 - Public Holiday - Spring Bank Holiday
+2022-06-03 - Public Holiday - Platinum Jubilee Bank Holiday
+2022-08-29 - Public Holiday - Summer Bank Holiday
+2022-12-26 - Public Holiday - Boxing Day
+2022-12-27 - Public Holiday - Christmas Day Substitute
+2022-12-28 - 2021-12-30 - Office Closed - Office Closed
+
+# 2023
+2023-01-02 - Public Holiday - New Year’s Day
+2023-04-07 - Public Holiday - Good Friday
+2023-04-10 - Public Holiday - Easter Monday
+2023-05-01 - Public Holiday - Early May Bank Holiday
+2023-05-29 - Public Holiday - Spring Bank Holiday
+2023-08-28 - Public Holiday - Summer Bank Holiday
+2023-12-25 - Public Holiday - Christmas Day
+2023-12-26 - Public Holiday - Boxing Day

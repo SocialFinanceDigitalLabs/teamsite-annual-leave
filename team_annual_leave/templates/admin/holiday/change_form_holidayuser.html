@@ -1,0 +1,45 @@
+{% extends "admin/change_form.html" %}
+{% block after_field_sets %}
+      <div class="tabular inline-related inline-group">
+    <fieldset class="module">
+   <h2>SUMMARY</h2>
+       <table>
+     <thead><tr>
+
+       <th class="original required">Year</th>
+       <th class="original required">Allowance</th>
+       <th class="original required">Rollover</th>
+       <th class="original required">Public Holiday Adjustment</th>
+       <th class="original required">Other Adjustments</th>
+       <th class="original required">Total Allowances</th>
+       <th class="original required">Total Taken</th>
+       <th class="original required">Remaining</th>
+       <th class="original required">Initial Allowance (-Rollover)</th>
+       <th class="original required">Jan to Aug</th>
+       <th class="original required">Jan to Aug (Frac)</th>
+       <th class="original required">Sep to Nov</th>
+
+        </tr>
+     </thead>
+       <tbody>
+       {% for activity in activity_list %}
+       <tr>
+           <td>{{ activity.summary.year }}</td>
+           <td>{{ activity.summary.allowance }}</td>
+           <td>{{ activity.summary.rollower }}</td>
+           <td>{{ activity.summary.public_holiday_adjustment }}</td>
+           <td>TBC</td>
+           <td>{{ activity.summary.total_allowance }}</td>
+           <td>{{ activity.summary.total_used }}</td>
+           <td>{{ activity.summary.remainder }}</td>
+           <td>{{ activity.summary.allowance_minus_rollover }}</td>
+           <td>{{ activity.summary.jan_to_aug }}</td>
+           <td>{{ activity.summary.jan_to_aug_frac|floatformat:2 }}</td>
+           <td>{{ activity.summary.sep_to_nov }}</td>
+       </tr>
+       {% endfor %}
+       </tbody>
+       </table>
+</fieldset>
+    </div>
+{% endblock %}
