@@ -5,8 +5,8 @@ from datetime import date
 
 from django.utils import timezone
 
-from team_annual_leave.models.holiday_record import HolidayRecord
-from team_annual_leave.models.holiday_record_type import HolidayRecordType
+from teamsite_annual_leave.models.holiday_record import HolidayRecord
+from teamsite_annual_leave.models.holiday_record_type import HolidayRecordType
 
 logger = logging.getLogger(__name__)
 _ptn = re.compile(
@@ -55,10 +55,10 @@ def read_holidays(stream):
 
 def load_holiday_fixtures(fixtures_file=None):
     if fixtures_file is None:
-        import team_annual_leave
+        import teamsite_annual_leave
 
         fixtures_file = (
-            pathlib.Path(team_annual_leave.__file__).parent
+            pathlib.Path(teamsite_annual_leave.__file__).parent
             / "fixtures/uk-bank-holidays.yaml"
         )
 

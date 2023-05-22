@@ -4,8 +4,8 @@ from decimal import Decimal
 import django.test
 from django.contrib.auth import get_user_model
 
-from team_annual_leave.models.holiday_plan import HolidayPlan
-from team_annual_leave.models.holiday_user import HolidayUser
+from teamsite_annual_leave.models.holiday_plan import HolidayPlan
+from teamsite_annual_leave.models.holiday_user import HolidayUser
 
 User = get_user_model()
 

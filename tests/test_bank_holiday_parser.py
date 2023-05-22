@@ -2,7 +2,7 @@ from datetime import date
 
 from django.test import TestCase
 
-from team_annual_leave.util.bank_holiday_parser import parse_bank_holiday_def
+from teamsite_annual_leave.util.bank_holiday_parser import parse_bank_holiday_def
 
 
 class ParseBankHolidaysTest(TestCase):

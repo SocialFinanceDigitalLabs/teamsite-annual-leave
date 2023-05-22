@@ -3,7 +3,7 @@ from django.core.management.base import BaseCommand
 from django.db.models import Q
 from tablib import Dataset
 
-from team_annual_leave.models.holiday_record import HolidayRecord
+from teamsite_annual_leave.models.holiday_record import HolidayRecord
 
 User = get_user_model()
 

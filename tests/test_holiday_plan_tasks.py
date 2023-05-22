@@ -3,10 +3,10 @@ from decimal import Decimal
 from django.contrib.auth import get_user_model
 from django.test import TestCase
 
-from team_annual_leave.models.holiday_plan import HolidayPlan
-from team_annual_leave.models.holiday_record import HolidayRecord
-from team_annual_leave.models.holiday_user import HolidayUser
-from team_annual_leave.util.bank_holiday_parser import (
+from teamsite_annual_leave.models.holiday_plan import HolidayPlan
+from teamsite_annual_leave.models.holiday_record import HolidayRecord
+from teamsite_annual_leave.models.holiday_user import HolidayUser
+from teamsite_annual_leave.util.bank_holiday_parser import (
     load_holiday_fixtures,
     synchronise_holidays,
 )

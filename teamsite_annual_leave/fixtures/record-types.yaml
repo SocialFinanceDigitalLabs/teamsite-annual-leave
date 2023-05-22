@@ -1,40 +1,40 @@
-- model: team_annual_leave.holidayrecordtype
+- model: teamsite_annual_leave.holidayrecordtype
   pk: 1
   fields:
     title: Entitlement
     code: ENT
     system_option: true
-- model: team_annual_leave.holidayrecordtype
+- model: teamsite_annual_leave.holidayrecordtype
   pk: 2
   fields:
     title: Adjustment
     code: ADJ
     system_option: true
-- model: team_annual_leave.holidayrecordtype
+- model: teamsite_annual_leave.holidayrecordtype
   pk: 3
   fields:
     title: Public Holiday
     code: PH
     system_option: true
-- model: team_annual_leave.holidayrecordtype
+- model: teamsite_annual_leave.holidayrecordtype
   pk: 4
   fields:
     title: Office Closed
     code: CLS
     system_option: true
-- model: team_annual_leave.holidayrecordtype
+- model: teamsite_annual_leave.holidayrecordtype
   pk: 5
   fields:
     title: Annual Leave
     code: AL
     system_option: false
-- model: team_annual_leave.holidayrecordtype
+- model: teamsite_annual_leave.holidayrecordtype
   pk: 6
   fields:
     title: Rollover
     code: ROL
     system_option: true
-- model: team_annual_leave.holidayrecordtype
+- model: teamsite_annual_leave.holidayrecordtype
   pk: 7
   fields:
     title: Public Holiday Adjustment

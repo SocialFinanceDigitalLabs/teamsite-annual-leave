@@ -6,7 +6,9 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "team_annual_leave_site.settings")
+    os.environ.setdefault(
+        "DJANGO_SETTINGS_MODULE", "teamsite_annual_leave_site.settings"
+    )
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

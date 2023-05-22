@@ -1,6 +1,6 @@
 from django.core.management import BaseCommand
 
-from team_annual_leave.tasks.add_rollovers import add_rollovers
+from teamsite_annual_leave.tasks.add_rollovers import add_rollovers
 
 
 class Command(BaseCommand):
