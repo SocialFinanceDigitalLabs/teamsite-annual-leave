@@ -113,7 +113,6 @@ def generate_holiday_report(user, year):
     total_adjustment = 0
     total_used = 0
     for result in result_list:
-
         adjustment = result["adjustment"] if result["adjustment"] is not None else 0
         total_adjustment += adjustment
 

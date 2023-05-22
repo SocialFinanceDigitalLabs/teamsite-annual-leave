@@ -1,12 +1,9 @@
-from datetime import date
 import logging
+from datetime import date
 from math import ceil
 
 from django.contrib import admin
-from threadlocals.threadlocals import (
-    get_request_variable,
-    set_request_variable,
-)
+from threadlocals.threadlocals import get_request_variable, set_request_variable
 
 from .models.confirmation import Confirmation
 from .models.holiday_plan import HolidayPlan
@@ -16,6 +13,7 @@ from .models.holiday_user import HolidayUser
 from .util.holiday_report import generate_holiday_report
 
 logger = logging.getLogger(__name__)
+
 
 class InlineHolidayPlanAdmin(admin.TabularInline):
     model = HolidayPlan
@@ -36,9 +34,11 @@ def _get_summary(user):
     try:
         summary = get_request_variable(varname, use_threadlocal_if_no_request=False)
     except RuntimeError:
-        logger.warning("Threadlocal middleware may not be installed. See README for details on how to speed up requests.")
+        logger.warning(
+            "Threadlocal middleware may not be installed. See README for details on how to speed up requests."
+        )
         summary = None
-    
+
     if summary is None:
         summary = generate_holiday_report(user.user, date.today().year)
         try:

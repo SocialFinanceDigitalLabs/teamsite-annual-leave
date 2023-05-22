@@ -1,7 +1,10 @@
 from django.contrib.auth import get_user_model
 from django.core.management.base import BaseCommand
 
-from team_annual_leave.util.bank_holiday_parser import load_holiday_fixtures, synchronise_holidays
+from team_annual_leave.util.bank_holiday_parser import (
+    load_holiday_fixtures,
+    synchronise_holidays,
+)
 
 User = get_user_model()
 

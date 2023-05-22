@@ -18,10 +18,12 @@ class HolidayRecordNode(DjangoObjectType):
 
     class Meta:
         model = HolidayRecord
-        filter_fields = {
-            "start_date": ["exact", "gt", "gte", "lt", "lte"],
-            "end_date": ["exact", "gt", "gte", "lt", "lte"],
-        },
+        filter_fields = (
+            {
+                "start_date": ["exact", "gt", "gte", "lt", "lte"],
+                "end_date": ["exact", "gt", "gte", "lt", "lte"],
+            },
+        )
         interfaces = (relay.Node,)
         fields = [
             "title",
@@ -45,4 +47,3 @@ class HolidayRecordFilter(django_filters.FilterSet):
             return queryset.filter(query)
         else:
             return queryset.filter(~query)
-

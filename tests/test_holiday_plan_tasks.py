@@ -6,7 +6,10 @@ from django.test import TestCase
 from team_annual_leave.models.holiday_plan import HolidayPlan
 from team_annual_leave.models.holiday_record import HolidayRecord
 from team_annual_leave.models.holiday_user import HolidayUser
-from team_annual_leave.util.bank_holiday_parser import load_holiday_fixtures, synchronise_holidays
+from team_annual_leave.util.bank_holiday_parser import (
+    load_holiday_fixtures,
+    synchronise_holidays,
+)
 
 User = get_user_model()
 

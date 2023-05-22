@@ -58,7 +58,8 @@ def load_holiday_fixtures(fixtures_file=None):
         import team_annual_leave
 
         fixtures_file = (
-            pathlib.Path(team_annual_leave.__file__).parent / "fixtures/uk-bank-holidays.yaml"
+            pathlib.Path(team_annual_leave.__file__).parent
+            / "fixtures/uk-bank-holidays.yaml"
         )
 
     with open(fixtures_file, "rt") as FILE:
